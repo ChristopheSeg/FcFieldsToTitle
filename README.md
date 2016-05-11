@@ -23,7 +23,11 @@ This small guide explains how to setup atomatic title for existing items of type
 * If everything works fine, activate RefreshAllTitle feature, edit and save one items to refresh all titles at once.
 
 ## TODO
+### RefreshAllTitle feature
 By Default, FcFieldsToTitle modify item title OnContentAfterSave event. This require to edit and save an item to get automatic title for this item. 
 
 FcFieldsToTitle has a built-in RefreshAllTitle feature to apply the automatic title to all items at once. This feature while important should be coded in Ajax to get a more efficent plugin. (Sory I do not have Ajax skill to do that!)
-
+### Item history
+Flexicontent save item history. Is it necessary to indicate to Flexicontent that items title and alais have been changed? 
+## Translation
+The plugin support multiple languages but only the English language files are provided. 
