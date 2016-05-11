@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="plugin" group="content" version="3.5" method="upgrade">
+	<name>FcFieldsToTitle</name>
+	<author>Christophe Seguinot</author>
+	<creationDate>May 2016</creationDate>
+    <license>GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html</license>
+	<authorEmail>christophe.seguinot@univ-lille1.fr</authorEmail>
+	<version>0.1</version>
+    <description>FC_FIELD2TITLE_DESCRIPTION</description>
+	<files>
+		<filename plugin="fcfieldstotitle">fcfieldstotitle.php</filename>
+		<filename>index.html</filename>
+        <folder>language</folder>
+	</files>
+	<config>
+		<fields name="params">
+			<fieldset name="basic" label="FC_FIELD2TITLE_PARAMS">
+				<field name="itemTypes" type="input" class="text" size="200" default=":persons;clothes" 
+					description="FC_FIELD2TITLE_ITEM_TYPES_DESCRIPTION" 
+					label="FC_FIELD2TITLE_ITEM_TYPES_LABEL">
+					</field>
+				<field name="titleFieldsStrings" type="input" class="text" size="200" default="firstname,lastname;clothestype,clothescolor,clothessize" 
+					description="FC_FIELD2TITLE_FIELDS_DESCRIPTION" 
+					label="FC_FIELD2TITLE_FIELDS_LABEL">
+				</field>
+                <field name="refreshAllTitle" type="radio" class="btn-group btn-group-yesno" default="0" 
+                	description="FC_FIELD2TITLE_FIELDS_REFRESH_ALL_DESCRIPTION" 
+                	label="FC_FIELD2TITLE_FIELDS_REFRESH_ALL_LABEL">
+                	<option value="1">JYES</option><option value="0">JNO</option>
+                </field>
+              </fieldset>
+		</fields>
+		<fields name="Usage">
+			<fieldset name="usage" label="FC_FIELD2TITLE_USAGE_LABEL">
+				<field name="usage" type="note" class="text"  
+					description="FC_FIELD2TITLE_USAGE_DESCRIPTION" 
+					label="FC_FIELD2TITLE_USAGE_LABEL">
+					</field>
+              </fieldset>
+		</fields>
+		FC_FIELD2TITLE_USAGE
+	</config>
+</extension>
